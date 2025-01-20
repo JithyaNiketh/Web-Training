@@ -1,0 +1,66 @@
+Web dev
+    1. front end
+    2. back end
+    3. db
+
+front end:
+    HTML 
+    CSS
+    JS
+    React JS
+
+HTML hyper text markup language
+    contains tags used to create structured content in websites
+
+CSS cascading Style sheets 
+    it is used to make the website attractive and animated 
+    used to style the website
+    font, color, position, shape, animations, size 
+
+JS Java Script
+    used to create dynamic websites 
+    Scripting language
+    high level programming language
+    JS is a weakly or loosely types language
+    JS is a lightweight(runs with interpretor which reduces one step in execution) and dynamic language
+    JS WAS introduction in 1995 by brendon eich.
+    The first JS program was developed within 7-8 days
+    it was called 'livescript' at first. but was renamed as 'Java Script' later on 
+
+
+Problem:
+    1 Write a program to check whether the number is divisible ny 2 and 3 and both(take prompt)
+        1.html 
+
+    2 write a program to find the largest number out of three numbers expectected from the user
+        2.html 
+
+    3 3.html 
+
+    4 a company decided to give bonus to employee according to the following criteria:
+        Time of service        bonus
+        more than 10 yrs        10%
+        6 to 10                  8%
+        less than 6              5%
+
+        ask the user to enter salary and years of service and print the bonus amount
+
+        4.html 
+
+
+20/1/25
+
+loops:
+    allows us to execute a block of code multiple times
+
+    for 
+    syntax: 
+        for (initialization; condition; update expression){
+            code
+        }
+
+        
+    for in
+    for of
+    while
+    do while

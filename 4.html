@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salary = parseInt(prompt("Enter Your current Salary:"));
+        let yrs = parseInt(prompt("Enter years of service:"));
+
+        let bonus;
+
+        if (yrs>10){
+            bonus = 10;
+
+        }
+
+        else if(yrs>6 && yrs<=10){
+            bonus = 8;
+        }
+
+        else if(yrs<6){
+            bonus = 5;
+        }
+
+        document.write(salary+((bonus*salary)/100));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalDays = parseInt(prompt("Enter the total number of days:"));
+        let daysAbsent = parseInt(prompt("Enter the days you were absent:"));
+
+        let attendance= Math.round(((totalDays-daysAbsent)/totalDays)*100);
+
+        if(attendance>75){
+            
+            document.write('You are eligible for the exam.');
+        }
+
+        else{
+            document.writeln('You are not eligible for the exam.');
+        }
+    </script>
+</body>
+</html>
