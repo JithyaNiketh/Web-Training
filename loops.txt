@@ -1,0 +1,45 @@
+loops:
+    allows us to execute a block of code multiple times
+
+    for 
+    syntax: 
+        for (initialization; condition; update expression){
+            code
+        }
+
+        
+    for in
+
+    syntax: 
+        for(let i in a){  // a is a String 
+            console.log(a[i]);
+        }
+        // prints every character in the string 'a'
+
+        
+
+    for of
+
+    syntax: 
+        for(let i of arr){
+            console.log(arr[i]);
+        }
+//
+    while
+
+    syntax:
+        while(condition){
+            code
+        }
+    
+    do while
+
+    syntax:
+        do{
+            code 
+
+        }while(condition);
+
+    //executes once for sure even if the condition is false.
+
+    
