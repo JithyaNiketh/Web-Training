@@ -24,7 +24,7 @@ loops:
         for(let i of arr){
             console.log(arr[i]);
         }
-//
+
     while
 
     syntax:
@@ -42,4 +42,9 @@ loops:
 
     //executes once for sure even if the condition is false.
 
-    
+Break And Continue in loops:
+    Break stops the loop from iterating.
+    Continue skips the current iteration.
+
+
+

@@ -1,3 +1,11 @@
+2211cs010237@mallareddyuniversity.ac.in
+A Jithya Niketh
+9347171377
+2211CS010237
+https://github.com/JithyaNiketh/Web-Training
+
+
+
 Web dev
     1. front end
     2. back end
@@ -61,6 +69,15 @@ loops:
 
         
     for in
+
+    syntax: 
+        for(let i in a){  // a is a String 
+            console.log(a[i]);
+        }
+        // prints every character in the string 'a'
+
+
+
     for of
     while
     do while

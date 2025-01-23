@@ -1,0 +1,26 @@
+functions are blocks of code that are reusable.
+
+Parametres: 
+variables which are declared inside the () while defining  a function
+
+Arguments: 
+variables which are passed through the function while calling it 
+
+syntax:
+    function function_name(){  // defining the function
+
+    }
+
+    function_name(); // calling the function
+
+Anonymous function:
+    function without function_name. we assign it to a variable after declaring
+
+    syntax:
+        var = function(){ //declaring function
+
+        }
+
+    console.log(var)// calling
+
+    
