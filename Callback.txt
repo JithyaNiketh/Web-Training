@@ -1,0 +1,69 @@
+Callback function:
+    recursive functions
+    you can pass the Callback function as argument to another function
+
+    execution: the function recieving the Callback will execution the Callback at some point during its executions(often at the 
+    end)
+
+    main function takes a Callback as parameter.
+    Callback function is passed to main function.
+    inside the main function, the Callback function is called with callback()
+
+    ex1
+        //function MainFn(callback){
+        //    console.log("Executing main fn");
+        //    callback();
+        //}
+
+        //function callbackFn(){
+        //    console.log("executing callbackFn ");
+        //}
+        
+        //MainFn(callbackFn);
+
+    ex2
+    passing a named function as a callback.
+
+        //function greet(name, callback){
+        //    console.log("Hello " + name);
+        //    callback();
+        //}
+
+        //function bye(){
+        //    console.log("GoodBye");
+        //}
+
+        //greet("AAAAA", bye);
+
+    ex3
+    passing an anonymous function as a callback
+
+        //function fn(callback){
+        //    console.log("Executing Main fn");
+        //    callback();
+        //}
+
+        //fn(function () {
+        //    console.log("Executing Anonymous fn");
+        //})
+
+    Here we didnt pass a named fn like in ex2. Instead, we defined an anonymous function directly within the function
+    callback call
+
+    ex4 
+    passing asynchronous function as a callback
+        function fetchData(callback){
+            console.log("fetching data...");
+            setTimeout(function(){
+            console.log("data fetched");
+            callback();
+            },2000);
+        }
+       
+
+        function processData(){
+            console.log("Data Processed")
+        }
+
+        fetchData(processData);
+

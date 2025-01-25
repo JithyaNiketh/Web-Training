@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function MainFn(callback){
+        //    console.log("Executing main fn");
+        //    callback();
+        //}
+
+        //function callbackFn(){
+        //    console.log("executing callbackFn ");
+        //}
+
+        //MainFn(callbackFn);
+
+        //function greet(name, callback){
+        //    console.log("Hello " + name);
+        //    callback();
+        //}
+
+        //function bye(){
+        //    console.log("GoodBye");
+        //}
+
+        //greet("AAAAA", bye);
+
+        //function fn(callback){
+        //    console.log("Executing Main fn");
+        //    callback();
+        //}
+
+        //fn(function () {
+        //    console.log("Executing Anonymous fn");
+        //})
+
+        function fetchData(callback){
+            console.log("fetching data...");
+            setTimeout(function(){
+            console.log("data fetched");
+            callback();
+            },2000);
+        }
+       
+
+        function processData(){
+            console.log("Data Processed")
+        }
+
+        fetchData(processData);
+
+    </script>
+</body>
+</html>
