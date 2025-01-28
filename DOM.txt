@@ -1,0 +1,14 @@
+DOM - Document Object Model - it is a programming interface in web dev that allows us to interact and manipulate 
+the html document
+
+When the web page is loaded, the browser creates the DOM of the web page
+
+When an html file is loaded into the browser, the js cant understand the html document directly 
+
+Dom is basically a representation of the web page but in a tree like structure.
+
+HTML dom allows js to access and odify all the elements in the html document. 
+
+in DOM all html elements are defined objects
+Property: is a value that you can set to the objects 
+Method: an action like add or delete

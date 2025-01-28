@@ -52,18 +52,18 @@ Callback function:
 
     ex4 
     passing asynchronous function as a callback
-        function fetchData(callback){
-            console.log("fetching data...");
-            setTimeout(function(){
-            console.log("data fetched");
-            callback();
-            },2000);
-        }
+        //function fetchData(callback){
+        //    console.log("fetching data...");
+        //    setTimeout(function(){
+        //    console.log("data fetched");
+        //    callback();
+        //    },2000);
+        //}
        
 
-        function processData(){
-            console.log("Data Processed")
-        }
+        //function processData(){
+        //    console.log("Data Processed")
+        //}
 
-        fetchData(processData);
+        //fetchData(processData);
 
