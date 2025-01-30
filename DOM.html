@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>                                                              
+<html lang="en">                                                             
+    <head>                                                                   
+        <meta charset="UTF-8">                                               
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Headings</title>
-    <style>
+    <!-- <style>
         .a {
             color: bisque;
         }
@@ -14,17 +14,29 @@
         .c {
             color: green;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <h1 class="b">thrinesh</h1>
-    <h1 class="a">ashish</h1>
-    <h1 class="a">akshith</h1>
-    <h1 class="b">surya</h1>
-    <h1 class="a">jayadeep</h1>
-    <h1 class="c">hrushikesh</h1>
-    <h1 class="b">jaswith</h1>
-    <h1 class="c">badulla</h1>
-    <h1 class="c">sreenath</h1>
+    <h1>Removing childNode</h1>
+<h2> I am in hyd</h2>
+<ul>
+    <li>Name 1<li>
+    <li>Name 2<li>
+    <li>Name 3<li>
+    <li>Name 4<li>
+</ul>
+
+<script>
+    const ul = document.querySelector('ul')
+    const lists = document.querySelectorAll('li')
+    console.log(ul)
+    console.log(lists)
+    for (const list of lists){
+        console.log(`Removing: ${list.textContent}`)
+        ul.removeChild(list)
+        console.log(lists)
+        console.log(list)
+    }
+</script>
 </body>
 </html>

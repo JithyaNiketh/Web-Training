@@ -22,5 +22,3 @@ Anonymous function:
         }
 
     console.log(var)// calling
-
-    
