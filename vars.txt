@@ -1,0 +1,23 @@
+Variables: let, var, const 
+var    
+    *If you create a variable outside of a function, you can use it anywhere in your code.
+    *If you create a variable inside a function, you can only use it within that function.
+    *The scope of a var variable is functional or global scope.
+    It can be updated and re-declared in the same scope.	
+    It can be declared without initialization.	
+    It can be accessed without initialization as its default value is “undefined”.	
+
+let 
+    *The variable defined using let keyword is only available inside the block {} where you define it.
+    The scope of a let variable is block scope.
+    It can be updated but cannot be re-declared in the same scope.	
+    It can be declared without initialization.	
+    It cannot be accessed without initialization otherwise it will give ‘referenceError’.	
+
+const
+    *const is similar to let, but with one big difference: once you assign a value to a const 
+    *variable, you can’t change it later. Like let, const is block-scoped.
+    The scope of a const variable is block scope.
+    It can neither be updated or re-declared in any scope.
+    It cannot be declared without initialization.
+    It cannot be accessed without initialization, as it cannot be declared without initialization.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=parseInt(prompt("Enter your age:"))
+        if(age>=18){
+            let ques=prompt("are you an indian citizen(yes/no)");
+            if(ques.toLowerCase()=="yes"){
+                console.log("you are eligible to vote");
+            }
+            else if(ques.toLowerCase()=="no"){
+                let dest=prompt("have you passed the citizenship test(yes/no)");
+                if(dest.toLowerCase()=="yes"){
+                    console.log("you are eligible to vote");
+                }
+                else{
+                    console.log("you are not eligible to vote");
+                }
+            }
+            else{
+                console.log("invalid input");
+            }
+        }
+        else{
+            console.log("You are not eligible to vote")
+        }
+    </script>
+</body>
+</html>

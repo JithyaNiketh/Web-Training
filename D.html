@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <h1 id="s">Ravi</h1>
+    <h1 id ="r">Ram</h1>
+    <h1></h1>
+  </div>
+    <div id="b">
+      <h2>Sam</h2>
+      <h2 id="d">Venkat</h2>
+    </div>
+  <script>
+    let n=document.createElement('h1')
+    let c=document.createElement('h1')
+    c.textContent='chiru'
+    n.textContent='Jithya'
+
+    let h=document.createElement('h2')
+    h.textContent='Jayadeep'
+
+    let p=document.getElementById('a')
+    let j=document.getElementById('s')
+    let l=document.getElementById('r')
+    
+    let pp=document.getElementById('b')
+    let e=document.getElementById('d')
+    p.insertBefore(c,l)
+    p.insertBefore(n,j)
+    pp.insertBefore(h,e)
+  </script>
+</body>
+</html>
