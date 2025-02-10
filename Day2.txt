@@ -1,0 +1,108 @@
+Q.Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. 
+    Explain with some examples.
+
+
+A.
+Data Type:
+    A data type in Java defines the type of value a variable can store. 
+
+    Java has two main categories of data types:
+        Primitive Data Types
+        Non-Primitive Data Types
+    
+    1. Primitive Data Types
+        Primitive data types are built-in data types provided by Java. They store simple values directly in memory.
+        examples:
+            byte, short, int, long, flaot, double, char, boolean
+
+        example code: 
+            public class PrimitiveTypesExample {
+                public static void main(String[] args) {
+                // Integer types
+                byte byteValue = 100;   // 1 byte
+                short shortValue = 20000; // 2 bytes
+                int intValue = 1000000; // 4 bytes
+                long longValue = 10000000000L; // 8 bytes (L at the end)
+
+                // Floating-point types
+                float floatValue = 3.14f; // 4 bytes (f at the end)
+                double doubleValue = 3.14159265359; // 8 bytes
+
+                // Character type
+                char charValue = 'A'; // 2 bytes
+
+                // Boolean type
+                boolean booleanValue = true; // 1 bit (true/false)
+
+                // Printing all primitive data types
+                System.out.println("Byte Value: " + byteValue);
+                System.out.println("Short Value: " + shortValue);
+                System.out.println("Int Value: " + intValue);
+                System.out.println("Long Value: " + longValue);
+                System.out.println("Float Value: " + floatValue);
+                System.out.println("Double Value: " + doubleValue);
+                System.out.println("Char Value: " + charValue);
+                System.out.println("Boolean Value: " + booleanValue);
+                }
+            }
+
+
+
+    2. Non-Primitive Data Types
+        Non-primitive data types store objects (reference types) instead of simple values.
+        They are more complex and can store multiple values.
+
+    examples: 
+        String, Arrays, Classes, Interfaces, User-defined objects
+
+
+        // Interface (Example of Non-Primitive Data Type)
+interface Vehicle {
+    void start();
+}
+
+// Class implementing the interface
+class Car implements Vehicle {
+    String brand; // Instance variable (Non-Primitive)
+    
+    // Constructor
+    Car(String brand) {
+        this.brand = brand;
+    }
+
+    // Implementing the interface method
+    public void start() {
+        System.out.println(brand + " is starting...");
+    }
+}
+
+public class NonPrimitiveTypesExample {
+    public static void main(String[] args) {
+        // 1. String (Non-Primitive)
+        String message = "Hello, Java!";
+
+        // 2. Array (Non-Primitive)
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // 3. Class Object (Non-Primitive)
+        Car myCar = new Car("Toyota");
+
+        // 4. Interface Usage (Non-Primitive)
+        Vehicle myVehicle = new Car("Honda"); // Polymorphism
+
+        // 5. Wrapper Classes (Non-Primitive)
+        Integer wrappedInt = Integer.valueOf(100);
+        Double wrappedDouble = Double.valueOf(99.99);
+        Boolean wrappedBoolean = Boolean.TRUE;
+
+        // Printing all non-primitive data types
+        System.out.println("String Value: " + message);
+        System.out.println("First Element of Array: " + numbers[0]);
+        System.out.println("Car Brand: " + myCar.brand);
+        myCar.start(); // Calling method from class
+        myVehicle.start(); // Calling method from interface
+        System.out.println("Wrapper Integer: " + wrappedInt);
+        System.out.println("Wrapper Double: " + wrappedDouble);
+        System.out.println("Wrapper Boolean: " + wrappedBoolean);
+    }
+}
