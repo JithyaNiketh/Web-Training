@@ -1,0 +1,294 @@
+2211cs010237@mallareddyuniversity.ac.in
+A Jithya Niketh
+9347171377
+2211CS010237
+https://github.com/JithyaNiketh/Web-Training
+
+
+
+Web dev
+    1. front end
+    2. back end
+    3. db
+
+front end:
+    HTML 
+    CSS
+    JS
+    React JS
+
+HTML hyper text markup language
+    contains tags used to create structured content in websites
+
+CSS cascading Style sheets 
+    it is used to make the website attractive and animated 
+    used to style the website
+    font, color, position, shape, animations, size 
+
+JS Java Script
+    used to create dynamic websites 
+    Scripting language
+    high level programming language
+    JS is a weakly or loosely types language 
+    JS is a lightweight(runs with interpretor which reduces one step in execution) and dynamic language
+    JS WAS introduction in 1995 by brendon eich.
+    The first JS program was developed within 7-8 days
+    it was called 'livescript' at first. but was renamed as 'Java Script' later on 
+
+Problem:
+    1 Write a program to check whether the number is divisible ny 2 and 3 and both(take prompt)
+        1.html 
+
+    2 write a program to find the largest number out of three numbers expectected from the user
+        2.html 
+
+    3 3.html 
+
+    4 a company decided to give bonus to employee according to the following criteria:
+        Time of service        bonus
+        more than 10 yrs        10%
+        6 to 10                  8%
+        less than 6              5%
+
+        ask the user to enter salary and years of service and print the bonus amount
+
+        4.html 
+
+20/1/25
+
+loops:
+    allows us to execute a block of code multiple times
+
+    for 
+    syntax: 
+        for (initialization; condition; update expression){
+            code
+        }
+
+    for in
+
+    syntax: 
+        for(let i in a){  // a is a String 
+            console.log(a[i]);
+        }
+        // prints every character in the string 'a'
+
+    for of
+    while
+    do while
+
+Creating element by using React JS:
+    React.createElement('hi')
+    Type = tagname(h1, p, div)
+    Prop = id, className, OnClick
+
+    ReactDom.createRoot()
+    ReactDom.render() - method used to display to the element
+
+    React element = what to render
+    Container = where to render
+
+ReactJS:
+node -v
+npm -v
+npx create-react-app app-name
+npm start
+
+JSX:
+Javascript XML, it is a syntax extension for javascript, jsx allows us to write HTML code in react js, jsx all the html tags must be closed, jsx compiles the html code to js, babel is a tool in jsx
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <div id="a"></div>
+    <script>
+      const b = React.createElement('h1',{id : 'c'},'I am Ravi')
+      const e = document.getElementById('a')
+      const root = ReactDOM.createRoot(e)
+      root.render(b)
+    </script>
+</body>
+</html>
+
+Babel:
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="a"></div>
+    <script type="text/babel">
+      const b = <h1 className="aa">Welcome to the it solutions</h1>
+      const e = document.getElementById('a')
+      const root = ReactDOM.createRoot(e)
+      root.render(b)
+    </script>
+</body>
+
+<div id="root"></div>
+    <script type="text/babel">
+      // const n = 5
+      // const b = <h1 className="aa">Welcome {n*2} to the it solutions</h1>
+      // const e = document.getElementById('a')
+      // const root = ReactDOM.createRoot(e)
+      // root.render(b)
+      const App = () =>{
+        const isLoggedTrue = true;
+        return(
+        <div>
+          {isLoggedTrue ? <h1>Welcome back, user</h1>:(<h1>Please Login.</h1>)}
+          {isLoggedTrue && <h1>you have a new notice</h1>}
+          </div>
+        )
+      }
+      const root = ReactDOM.createRoot(document.getElementById('root'))
+      root.render(<App/>)
+    </script>
+
+Functions:
+Using a function call:
+You can use a function call directly with in the jsx expression.
+function get(name){
+        return `Hello, ${name}! welcome to React`;
+      }
+      function Greeting(){
+        const name = 'Kavya'
+        return <h1>{get(name)}</h1>
+      }
+
+const root = ReactDOM.createRoot(document.getElementById('a'))
+root.render(<Greeting/>)
+
+Public/index.html: The main html file that serves as the entry point for the app
+Src/index.js: the javascript entry point for the react app where the DOM is rendered
+Src/app.js: the main component that serves as the root of the component tree
+Src/components: a folder to store reusable components.
+
+Components: this helps to create reusable block of code
+If any goes wrong in the user interface it can be found easily
+import React, { Component } from "react";
+import './App.css';
+
+const Welcome = () => <h1 className="message">Hello Jayadeeep</h1>
+
+function  App() {
+  return(
+    <div className="App">
+      <Welcome/>
+    </div>
+  )
+}
+
+export default App;
+
+import React from "react";
+
+const Welcome = (props) =>{
+    const {name,greeting} = props
+    return(
+        <div>
+            <h1 className="message">{greeting}, {name}</h1>
+        </div>
+    )
+}
+
+export default Welcome;
+
+Conditional Rendering:
+import React from "react";
+
+    const FruitList = () =>{
+        const fruits = ['apple','cherry','orange','grapes']
+        return(
+            <div>
+                <h1>Fruits</h1>
+                <ul>
+                    {fruits.map((fruit,index)=>{
+                        <li key={index}>{fruit}</li>
+                    })}
+                </ul>
+            </div>
+        )
+    }
+
+export default FruitList;
+
+light Bulb On:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .light-bulb{
+        height: 350px;
+        width: 200px;
+      }
+      #body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        padding: 50px;
+      }
+      .button{
+        padding: 10px;
+        background-color: brown;
+        border-radius: 5px;
+        /* height: 50px;
+        width: 100px; */
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 20px;
+        border: 2px solid #fff;
+      }
+    </style>
+</head>
+<body id="body">
+  <img id="bulbImg" class="light-bulb" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png">
+  <button id="toggleButton" class="button" onclick="lightBulbOn()">Turn on</button>
+  <script>
+    let isOn = false;
+    function lightBulbOn() {
+      const body = document.getElementById('body');
+      const bulbImg = document.getElementById('bulbImg');
+      const toggleButton = document.getElementById('toggleButton');
+      if(isOn =! isOn){
+        body.style.backgroundColor = "red";
+        bulbImg.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
+        toggleButton.textContent = "Turn off";
+      }else{
+        body.style.backgroundColor = "lightyellow";
+        bulbImg.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+        toggleButton.textContent = "Turn on";
+      }
+    }
+  </script>
+</body>
+</html>
+
+State in React:
+In react, state is like a container that holds the data or information for a component.
+
+
+functional components:
+    syntax: 
+    const [statevariable, setStateFunction] = useState(initialValue)
+
+    statevariable: 
+
+State: 
+  it is an essential part in reatc because it allows components to be dynamic, interactive and capable of responding to user input 
+  or change over time.
+
+  useStateHook:
+    useState allows you to add state to functional components

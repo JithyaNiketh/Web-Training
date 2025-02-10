@@ -3,6 +3,8 @@ import './App.css';
 //import Welcome from './Components/Welcome';
 //import Greeting from "./Components/Greeting";
 import Fruitlist from "./Components/FruitList";
+import Counter from "./Components/Counter";
+import ThemeToggler from "./Components/ThemeToggler";
 
 // const Welcome=()=> <h1 className="message">Hello Jithya</h1>
 
@@ -36,16 +38,36 @@ import Fruitlist from "./Components/FruitList";
 //  );
 //}
 
-const App=()=>{
-  return(
-    <div className="App">
-      <div className="Fr">
-        <Fruitlist/>
-      </div>
-    </div>
-  )
-}
+// const App=()=>{
+//   return(
+//     <div className="App">
+//       <div className="Fr">
+//         <Fruitlist/>
+//       </div>
+//     </div>
+//   )
+// }
 
+
+// const App=()=>{
+//   return(
+//     <div className="App">
+//       <div className="Counter">
+//         <Counter/>
+//       </div>
+//     </div>
+//   )
+// }/
+
+const App=()=>{
+    return(
+      <div className="App">
+        <div className="ThemeToggler">
+          <ThemeToggler/>
+        </div>
+      </div>
+    )
+   }
 
 
 export default App;

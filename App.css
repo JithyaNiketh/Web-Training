@@ -2,7 +2,7 @@
   
   background-size: cover;
   height: 100vh;
-  background-color: black;
+  /* background-color: black; */
   padding: 40px;
 }
 
@@ -78,3 +78,14 @@
 
 }
 
+.Counter{
+  color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Buttons{
+  display: flex;
+  flex-direction: column;
+}
