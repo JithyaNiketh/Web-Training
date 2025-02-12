@@ -2,7 +2,7 @@
   
   background-size: cover;
   height: 100vh;
-  /* background-color: black; */
+  background-color: black;
   padding: 40px;
 }
 
@@ -88,4 +88,49 @@
 .Buttons{
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  padding: 13px;
+  margin-bottom: 20px;
+  background-color: #b74b4b;
+  color: rgb(0, 0, 0);
+  border: 2px;
+  border-radius: 70px;
+  text-size-adjust: 20;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.ChildA{
+  background-color: black;
+  color: #b74b4b;
+  text-align: center;
+  align-items: center;
+}
+
+.ChildB{
+  background-color: black;
+  color: #b74b4b;
+  
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.C{
+  background-color: black;
+  width: 100%;
+  color: #b74b4b;
+  align-items: center;
+  text-align: center;
+}
+
+.Buttons:hover{
+  border-radius: 15px;
+  transform: translate(0px, -5px);
+  border: #282c34;
+  border-width: 20px;
 }

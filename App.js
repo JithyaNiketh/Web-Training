@@ -2,9 +2,11 @@ import React from "react";
 import './App.css';
 //import Welcome from './Components/Welcome';
 //import Greeting from "./Components/Greeting";
-import Fruitlist from "./Components/FruitList";
-import Counter from "./Components/Counter";
-import ThemeToggler from "./Components/ThemeToggler";
+//import Fruitlist from "./Components/FruitList";
+//import Counter from "./Components/Counter";
+//import ThemeToggler from "./Components/ThemeToggler";
+import ChildA from "./Components/ChildA";
+import ChildB from "./Components/ChildB";
 
 // const Welcome=()=> <h1 className="message">Hello Jithya</h1>
 
@@ -57,17 +59,37 @@ import ThemeToggler from "./Components/ThemeToggler";
 //       </div>
 //     </div>
 //   )
-// }/
+// }
 
-const App=()=>{
+// const App=()=>{
+//     return(
+//       <div className="App">
+//         <div className="ThemeToggler">
+//           <ThemeToggler/>
+//         </div>
+//       </div>
+//     )
+//    }
+
+import {useState} from "react";
+import "./App.css";
+
+
+const Parent=()=>{
+    const[count, setCount]=useState(0);
+    const increment =()=>{
+        setCount(c=>c+1);
+    };
+
+    const decrement=()=>{
+        setCount(c=>c-1);
+    };
     return(
-      <div className="App">
-        <div className="ThemeToggler">
-          <ThemeToggler/>
+        <div className="App">
+            <ChildA/>
+            <ChildB count={count} increment={increment} decrement = {decrement} />
         </div>
-      </div>
     )
-   }
+}
+export default Parent;
 
-
-export default App;

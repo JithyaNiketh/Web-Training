@@ -292,3 +292,11 @@ State:
 
   useStateHook:
     useState allows you to add state to functional components
+
+
+React memo:
+  1. It is a HOC (high order component) is not a react hook 
+  2. it will stop unnecessary - rendering of functional components of its props
+  3. It will improve the performance of the functional components 
+
+  
