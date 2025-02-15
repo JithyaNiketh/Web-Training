@@ -5,8 +5,8 @@ import './App.css';
 //import Fruitlist from "./Components/FruitList";
 //import Counter from "./Components/Counter";
 //import ThemeToggler from "./Components/ThemeToggler";
-import ChildA from "./Components/ChildA";
-import ChildB from "./Components/ChildB";
+//import ChildA from "./Components/ChildA";
+//import ChildB from "./Components/ChildB";
 
 // const Welcome=()=> <h1 className="message">Hello Jithya</h1>
 
@@ -71,25 +71,48 @@ import ChildB from "./Components/ChildB";
 //     )
 //    }
 
-import {useState} from "react";
-import "./App.css";
+// import {useState} from "react";
+// import "./App.css";
 
 
-const Parent=()=>{
-    const[count, setCount]=useState(0);
-    const increment =()=>{
-        setCount(c=>c+1);
-    };
+// const Parent=()=>{
+//     const[count, setCount]=useState(0);
+//     const increment =()=>{
+//         setCount(c=>c+1);
+//     };
 
-    const decrement=()=>{
-        setCount(c=>c-1);
-    };
-    return(
-        <div className="App">
-            <ChildA/>
-            <ChildB count={count} increment={increment} decrement = {decrement} />
+//     const decrement=()=>{
+//         setCount(c=>c-1);
+//     };
+//     return(
+//         <div className="App">
+//             <ChildA/>
+//             <ChildB count={count} increment={increment} decrement = {decrement} />
+//         </div>
+//     )
+// }
+// export default Parent;
+
+
+
+import { ListProvider } from './Components/ListContext';
+import AddItem from './Components/AddItem';
+import ItemList from './Components/ItemList';
+
+const App = () => {
+  return (
+    <ListProvider>
+     <div className="App">
+        <div className="IMA">
+            <h1>Item Management App</h1>
+            <br></br>
+            <AddItem />
+            <br></br>
+            <ItemList />
         </div>
-    )
-}
-export default Parent;
+     </div>
+    </ListProvider>
+  );
+};
 
+export default App;
