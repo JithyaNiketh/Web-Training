@@ -299,4 +299,30 @@ React memo:
   2. it will stop unnecessary - rendering of functional components of its props
   3. It will improve the performance of the functional components 
 
-  
+How to use Events in react:
+  Use camelCase for event names
+  pass a function to the evnt (not to the function call)
+  This function will run when the event happens  
+
+  a. click event(onclick) ex:
+    function App(){
+    const handleClick=()=>{
+        alert("Button Clicked.");
+    };
+    return(
+        <div className="App" style={{alignSelf:'center'}} >
+            <button onClick={handleClick}>Sample Button</button>
+        </div>
+      )
+    }
+
+    export default App;
+
+key events:
+  (OnKeyDown):
+    Key is pressed on the key board
+
+  syntax:
+    OnKeyDown = {KeyDownFunction}
+
+    
